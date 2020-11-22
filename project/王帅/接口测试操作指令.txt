@@ -1,2 +1,0 @@
-cd E:\eclipse-workspace\moco-2020\src
-java -jar moco-runner-1.1.0-standalone.jar http -p 8888 -c shangcheng.json
