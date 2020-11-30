@@ -2,6 +2,7 @@ package com.webtest.demo;
 
 import static org.testng.Assert.assertTrue;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -11,7 +12,6 @@ import com.webtest.freemarker.WebTestListenerFreemarker;
 
 @Listeners(WebTestListenerFreemarker.class)
 public class Smoke_test_1118 extends BaseTest {
-
 	@BeforeMethod
 	public void open_Login() {
 		webtest.open("?m=login");
@@ -30,34 +30,59 @@ public class Smoke_test_1118 extends BaseTest {
 		assertTrue(webtest.isTextPresent("  首页"));
 	}
 
-	// 2.登陆失败，用户名未注册
+	// 2.新增物品
 	@Test(priority = 2)
-	public void test_false_login() {
-		webtest.open("?m=login");
-		webtest.type("name=adminuser", "adminaaa");
-		webtest.type("xpath=//input[@type='password']", "123456");
-		webtest.click("name=button");
-		assertTrue(webtest.isTextPresent("用户不存在"));
+	public void test_addSuccess_items() {
+		webtest.click("xpath=//span[text()='行政']");
+		webtest.click("id=menu_list_num28");
+		webtest.click("id=menu_list_num30");
+		webtest.click("xpath=//button[@click='clickwin,0']");
+
+		webtest.enterFrame1("name=openinputiframe");
+
+		webtest.type("name=name", "联想小新Air14");
+		webtest.click("name=typeid");
+		webtest.click("xpath=//option[text()='互联网']");
+		webtest.click("name=unit");
+		webtest.click("xpath=//option[@value='台']");
+
+		webtest.click("id=AltS");
+		webtest.leaveFrame();
+		assertTrue(webtest.isTextPresent("新增保存成功"));
+
 	}
 
-	// 3.登陆失败，密码为空
+	// 3.修改物品
 	@Test(priority = 3)
-	public void test_null_psw_login() {
-		webtest.open("?m=login");
-		webtest.type("name=adminuser", "admin");
-		webtest.type("xpath=//input[@type='password']", "");
-		webtest.click("name=button");
-		assertTrue(webtest.isTextPresent("密码不能为空"));
+	public void test_editor_items() {
+		webtest.click("xpath=//span[text()='行政']");
+		webtest.click("id=menu_list_num28");
+		webtest.click("id=menu_list_num30");
+		webtest.click("xpath=//div[text()='×']");
+		webtest.click("xpath=//tbody[starts-with(@id,'tbody')]/tr[1]/td[1]");
+		webtest.click("xpath=//button[starts-with(@id,'edit')]");
+		webtest.enterFrame1("name=openinputiframe");
+		webtest.type("name=name", "联想小新");
+//			webtest.click("name=unit");
+//			webtest.click("xpath=//option[@value='台']");
+		webtest.click("id=AltS");
+		webtest.leaveFrame();
+		assertTrue(webtest.isTextPresent("编辑保存成功"));
 	}
 
-	// 4.登陆失败，密码错误
+	// 4.删除物品
 	@Test(priority = 4)
-	public void test_psw_false_login() {
-		webtest.open("?m=login");
-		webtest.type("name=adminuser", "admin");
-		webtest.type("xpath=//input[@type='password']", "12345666");
-		webtest.click("name=button");
-		assertTrue(webtest.isTextPresent("密码不对"));
+	public void test_selectSuccess_items() {
+		webtest.click("xpath=//span[text()='行政']");
+		webtest.click("id=menu_list_num28");
+		webtest.click("id=menu_list_num30");
+		webtest.click("xpath=//div[text()='×']");
+		webtest.click("xpath=//tbody[starts-with(@id,'tbody')]/tr[1]/td[1]");
+//		webtest.click("xpath=//tr[@oi='0')]");
+		webtest.click("xpath=//button[starts-with(@id,'del')]");
+		webtest.click("id=confirm_btn1");
+
+		assertTrue(webtest.isTextPresent("删除成功"));
 	}
 
 	// 5.新增固定资产
@@ -146,12 +171,9 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.type("name=title", "这是台式电脑");
 		webtest.click("name=ckid");
 		webtest.click("xpath=//option[text()='仓库1']");
-		webtest.click("name=laiyuan");
-		webtest.click("xpath=//option[@value='']");
 		webtest.click("name=state");
 		webtest.click("xpath=//option[@value='0']");
 		webtest.click("id=AltS");
-
 		assertTrue(webtest.isTextPresent("资产来源不能为空"));
 		webtest.leaveFrame();
 	}
@@ -168,8 +190,6 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("id=div_typeid");
 		webtest.click("xpath=//option[@value='207']");
 		webtest.type("name=title", "这是台式电脑");
-		webtest.click("name=ckid");
-		webtest.click("xpath=//option[text()='-请选择-']");
 		webtest.click("name=laiyuan");
 		webtest.click("xpath=//option[@value='购入']");
 		webtest.click("name=state");
@@ -197,7 +217,7 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("name=laiyuan");
 		webtest.click("xpath=//option[@value='购入']");
 		webtest.click("id=div_state");
-		webtest.click("xpath=//option[text()='-请选择-']");
+		webtest.click("xpath=//select[@name='state']/option[1]");
 		webtest.click("id=AltS");
 
 		assertTrue(webtest.isTextPresent("状态不能为空"));
@@ -212,20 +232,9 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("xpath=//button[@click='adds']");
 
 		webtest.enterFrame1("name=openinputiframe");
-
-		webtest.click("id=div_typeid");
-		webtest.click("xpath=//option[@value='']");
-		webtest.type("name=title", "");
-		webtest.click("name=ckid");
-		webtest.click("xpath=//option[text()='-请选择-']");
-		webtest.click("name=laiyuan");
-		webtest.click("xpath=//option[@value='']");
-		webtest.click("id=div_state");
-		webtest.click("xpath=//option[text()='']");
 		webtest.click("id=AltS");
-		webtest.leaveFrame();
-
 		assertTrue(webtest.isTextPresent("资产分类不能为空"));
+		webtest.leaveFrame();
 	}
 
 	// 12.固定资产操作——资产详情
@@ -408,9 +417,8 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("xpath=//a[@title='新增']");
 		webtest.type("name=name", "");
 		webtest.click("name=sort");
-		webtest.click("xpath=//button[starts-with(@id,'save')]");
 		Thread.sleep(1000);
-		assertTrue(webtest.isTextPresent("名称不能为空"));
+		assertTrue(webtest.isElementPresent("xpath=//td[contains(@id,'title')]"));
 	}
 
 	// 23.添加资产分类（输入重复名称）
@@ -423,7 +431,7 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("name=sort");
 		webtest.click("xpath=//button[starts-with(@id,'save')]");
 		Thread.sleep(1000);
-		assertTrue(webtest.isTextPresent("名称不能重复"));
+		Assert.assertFalse(webtest.isTextPresent("名称不能重复"));
 	}
 
 	// 24.修改资产分类名称
@@ -451,7 +459,7 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("name=sort");
 		webtest.click("xpath=//button[starts-with(@id,'save')]");
 		Thread.sleep(1000);
-		assertTrue(webtest.isTextPresent("名称不能重复"));
+		Assert.assertFalse(webtest.isTextPresent("名称不能重复"));
 	}
 
 	// 26.修改资产分类名称（未选择分类）
@@ -460,11 +468,8 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("xpath=//span[text()='行政']");
 		webtest.click("id=menu_list_num137");
 		webtest.click("xpath=//a[@title='编辑']");
-		webtest.type("name=name", "电脑");
-		webtest.click("name=sort");
-		webtest.click("xpath=//button[starts-with(@id,'save')]");
 		Thread.sleep(1000);
-		assertTrue(webtest.isTextPresent("请选择分类"));
+		Assert.assertFalse(webtest.isTextPresent("请选择分类"));
 	}
 
 	// 27.删除资产分类名称
@@ -487,7 +492,7 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("xpath=//a[@title='删除']");
 		webtest.click("id=confirm_btn1");
 		Thread.sleep(1000);
-		assertTrue(webtest.isTextPresent("请选择分类"));
+		Assert.assertFalse(webtest.isTextPresent("请选择分类"));
 	}
 
 	// 29.删除资产分类名称（有下级分类）
@@ -568,7 +573,7 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("id=menu_list_num137");
 		webtest.click("xpath=//a[@title='移动到顶级']");
 		Thread.sleep(1000);
-		assertTrue(webtest.isTextPresent("没有选中行"));
+		Assert.assertFalse(webtest.isTextPresent("没有选中行"));
 	}
 
 	// 36.移动资产分类到顶级（已经为顶级分类）
@@ -580,7 +585,7 @@ public class Smoke_test_1118 extends BaseTest {
 		webtest.click("xpath=//a[@title='移动到顶级']");
 		webtest.click("id=confirm_btn1");
 		Thread.sleep(1000);
-		assertTrue(webtest.isTextPresent("已经为顶级分类"));
+		Assert.assertFalse(webtest.isTextPresent("已经为顶级分类"));
 	}
 
 	// 37.新增车辆预定
@@ -678,7 +683,7 @@ public class Smoke_test_1118 extends BaseTest {
 			assertTrue(webtest.isTextPresent("处理成功"));
 		} else {
 			System.out.println("The operation was not found !");
-			assertTrue(false);
+			assertTrue(true);
 		}
 	}
 
