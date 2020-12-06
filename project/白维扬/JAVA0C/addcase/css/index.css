@@ -1,0 +1,707 @@
+/*
+ ÃÂ¨Ã…Ã¤Â·Ã»Â´Â¦Ã€Ã­
+ */
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.clear:after{
+    content:"";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+
+/*
+ ÂµÂ¼ÂºÂ½Ã€Â¸
+ */
+
+.nav{
+    padding: 10px;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.nav .container{
+    width: 1200px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.nav .container .left{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 900;
+}
+.nav .container .right{
+    float: right;
+    margin-right: -15px;
+    height: 30px;
+}
+.nav .container .right > li{
+    float: left;
+    margin-right: 40px;
+    display: block;
+    font-size: 17px;
+    padding: 5px 15px;
+}
+.nav .container .right > li a{
+    color: white;
+}
+/*ÃÂ³Ã’Â»ÃŽÃ„Ã—Ã–Â¾Ã“Ã–ÃÂ´Â¦Ã€Ã­Ã‹Ã¹Ã“Ãtext_centerÃ€Ã */
+.text-center{
+    text-align: center;
+}
+
+
+/*
+ HomeÂ´Ã³ÃÂ¼Â°Ã¥Â¿Ã©
+ */
+#selected{
+    color: #fcac45;
+}
+#home{
+    width: 100%;
+    height: 250px;
+    background: url(../images/man-in-blue-and-green-long-sleeved-suit-riding-on-snowmobile-804570.jpg);
+
+    /*ÃÃ˜Ã•Â¹ÃŠÃ´ÃÃ”Â£ÂºÂ°Ã‘Â±Â³Â¾Â°ÃÂ¼ÃÃ±Ã€Â©Ã•Â¹Ã–ÃÃ—Ã£Â¹Â»Â´Ã³Â£Â¬Ã’Ã”ÃŠÂ¹Â±Â³Â¾Â°ÃÂ¼ÃÃ±ÃÃªÃˆÂ«Â¸Â²Â¸Ã‡Â±Â³Â¾Â°Ã‡Ã¸Ã“Ã²Â¡Â£*/
+    background-size: cover;
+    /*ÃÃ˜Ã•Â¹ÃŠÃ´ÃÃ”Â£ÂºÃÃ”Ã‰Ã¨Ã–ÃƒÂ±Â³Â¾Â°ÃÂ¼ÃÃ±ÂµÃ„Ã†Ã°ÃŠÂ¼ÃŽÂ»Ã–ÃƒÃŽÂªÃ–ÃÂ¼Ã¤Ã…Ã¤ÂºÃbackground-attachmentÃŠÃ´ÃÃ”Â½Ã¢Â¾Ã¶Â¼Ã¦ÃˆÃÃŽÃŠÃŒÃ¢*/
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+#home .over{
+    height: 750px;
+    background-attachment: fixed;
+}
+#home .over .content233{
+    position: relative;
+    padding-top: 570px;
+    height: 365px;
+    width: 100%;
+}
+#home .over .content233 h1{
+    font-weight: 900;
+    font-size: 36px;
+}
+#home .over .content233 h1 span{
+    color: #fcac45;
+}
+#home .over .content233 p{
+    font-size: 20px;
+    margin-top: 20px;
+    /*	color: #cfcfcf;*/
+}
+
+
+
+/*
+ news1
+ */
+#news1{
+    height: 400px;
+    width: 100%;
+    padding: 80px 0;
+}
+#news1 .container{
+    width: 1230px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+#news1 .container .left{
+    height: 300px;
+    width: 500px;
+    float: left;
+    font-weight: bold;
+}
+
+#news1 .container .left h1{
+    color: #000;
+    font-size: 32px;
+    text-align:left;
+}
+#news1 .container .left h2{
+    font-weight: normal;
+    text-align:left;
+    font-size: 36px;
+    margin-top: 20px;
+}
+#orangebarstyle{
+    height: 5px;
+    width: 100px;
+    margin-top: 30px;
+    background-color: #f1c232;
+}
+#news1 .container .left p{
+    float: left;
+    margin-top: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align:left;
+    color: #666666;
+    font-weight: normal;
+}
+#news1 .container .left .secon{
+    float: left;
+    color: #666666;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #666666;
+    margin-top: 140px;
+    height: 35px;
+    width: 120px;
+    line-height: 35px;
+}
+#news1 .container .left #second{
+    background-color:#067ac0;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ Â·Ã–Ã’Â³Ã‚Ã–Â²Â¥Ã‰Ã¨Â¼Ã†
+ */
+
+
+/*补充intro1板块*/
+#intro{
+    height: 200px;
+    width: 100%;
+    background: url(../images/man-surfing-on-water-waves-near-island-1667781.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+#intro .over{
+    text-align: center;
+    background-attachment: fixed;
+    height: 200px;
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
+}
+#intro .over .head{
+    position: relative;
+    top: 40px;
+    font-size: 36px;
+}
+#intro .over .head span{
+    color: #fcac45;
+}
+#intro .over #downscroll img{
+    position: relative;
+    top: 70px;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    padding: 7px;
+}
+#bian{
+    background-color: #fcac45;
+}
+
+
+
+
+
+#new2{
+    width: 100%;
+    height: 800px;
+    margin-top: 20px;
+}
+#new2 .box{
+    height: 800px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#new2 .box div{
+    height: 300px;
+    width: 300px;
+    float: left;
+    margin: 48px;
+    border: 1px solid #ccc;
+}
+#new2 .box div img{
+    transition: all 1s;
+}
+#new2 .box div img:hover{
+    transform: scale(1.01);
+    box-shadow: 8px 8px 4px #888888;
+}
+
+
+/*contact us*/
+.contact{
+    height: 700px;
+    width: 100%;
+}
+.contact .contact_center{
+    height: 700px;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+/*contact left*/
+.contact .contact_center .left{
+    float: left;
+    width: 550px;
+    height: 700px;
+    text-align: left;
+}
+.contact .contact_center .left h3{
+    margin-top: 70px;
+    font-size: 48px;
+    color: #0082ff;
+    border-bottom: solid 2px #0082ff;
+    margin-bottom: 3px;
+}
+.contact .contact_center .left h4{
+    margin-bottom: 3px;
+    font-weight: normal;
+    font-size: 42px;
+    color: #333;
+    letter-spacing: 3px;
+}
+.contact .contact_center .left .div1{
+    height: 2px;
+    width: 100%;
+    background-color: #eee;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.contact .contact_center .left p{
+    font-size: 14px;
+    color: #424242;
+    line-height: 30px;
+}
+.contact .contact_center .left .bar{
+    font-size: 18px;
+    padding-left: 60px;
+    line-height: 32px;
+    height: 32px;
+    color: #666;
+    margin: 30px 0 30px;
+}
+.contact .contact_center .left #bar1{
+    background: url(..//images/phonebar.png);
+    background-repeat: no-repeat;
+}
+.contact .contact_center .left #bar2{
+    background: url(../images/QQa.png);
+    background-repeat: no-repeat;
+}
+
+
+.contact .contact_center .right{
+    float: left;
+    width: 550px;
+    height: 700px;
+}
+.contact .contact_center .right h3{
+    font-weight: normal;
+    font-size: 28px;
+    color: #444;
+    text-align:left;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.contact .contact_center .right div{
+    padding-left: 20px;
+    margin-left: 80px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #f3f3f3;
+    outline: none;
+    text-align: left;
+    font-size: 14px;
+    color: #999;
+    width: 400px;
+}
+.contact .contact_center .right div input{
+    border: none;
+    background-color: #f3f3f3;
+    height: 25px;
+    line-height: 25px;
+    width: 200px;
+}
+.contact .contact_center .right div textarea{
+    width: 95%;
+    border: none;
+    height: 70px;
+    background-color: #f3f3f3;
+    text-align: left;
+    color: #999;
+    text-indent: 20px;
+}
+#getcode{
+    float: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    margin-left: 80px;
+    width: 240px;
+    line-height: 50px;
+    background-color: #f3f3f3;
+}
+#getcode input{
+    border: none;
+    background-color: #f3f3f3;
+    height: 35px;
+    line-height: 35px;
+    width: 130px;
+}
+.getCode{
+    width: 100px;
+    position: relative;
+    top: 25px;
+    height: 40px;
+    margin-left: 20px;
+}
+.codeImg{
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 40px;
+}
+.btnmess_btn{
+    margin-left: 80px;
+    width: 420px;
+    height: 50px;
+    border:solid 2px #2779d0;
+    background-color: #fff;
+    outline: none;
+    color: #2779d0;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+.notice{
+    margin-left: 100px;
+    height:20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: red;
+}
+.codeImg{
+    margin-left: 90px;
+}
+
+#topTop{
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    opacity: 0.2;
+    background-color: #000;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    padding: 5px 2px;
+}
+#topTop img{
+    width: 40px;
+    height: 40px;
+}
+
+#left{
+    width:400px;
+    float:left;
+}
+
+.grey{
+    color:grey;
+    margin-bottom:20px;
+}
+
+.bigger{
+    line-height:40px;
+}
+
+.beblue{
+    color:#31539b;
+}
+
+#box0{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #CED4DA;
+    height: 50px;
+}
+#options{
+    float: left;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+}
+#input1{
+    height: 44px;
+    width: 998px;
+    font-size: 24px;
+    padding-left:20px;
+}
+#right{
+    float: right;
+    width: 68px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-style:
+    border: 1px solid #000;
+    text-align: center;
+}
+#options:hover{
+    background-color: #6C757D;
+    color: white;
+}
+.upload_dialog_div{
+    position:fixed;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    overflow:auto;
+    visibility:hidden;
+    background-color: rgba(60,60,60,0.5);
+    z-index:99;
+}
+.style_content_div{
+    position:relative;
+    margin:auto;
+    margin-top:160px;
+    width:400px;
+    height:160px;
+    background:#F5F5DC;
+}
+.style_content_upper_div{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:400px;
+    height:100px;
+    background:#F5F5DC;
+}
+.style_content_lower_div{
+    position:absolute;
+    left:0px;
+    top:100px;
+    width:400px;
+    height:60px;
+    background:#F5FFDC;
+}
+
+.style_content_file_div{
+    position:absolute;
+    left:15px;
+    top:20px;
+    width:380px;
+    height:60px;
+}
+.style_file_span{
+    float:left;
+    width:120px;
+    height:36px;
+    font-size:24px;
+    text-align:right;
+}
+.style_file_content{
+    margin-top:5px;
+}
+.style_content_prog_div{
+    position:absolute;
+    left:18px;
+    top:57px;
+    width:360px;
+    height:40px;
+}
+.style_prog_span_hit{
+    color:#ff0000;
+}
+.style_prog_content{
+    width:360px;
+    visibility:hidden;
+}
+.style_content_span{
+    width:200px;
+    height:60px;
+    line-height:60px;
+    display:inline-block;
+    float:left;
+    font-size:32px;
+    text-align:center;
+    cursor: pointer;
+}
+.style_copyright_a{
+    text-decoration:none;
+}
+#select2{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    border: 0;
+    position: relative;
+}
+.main-center .left {
+    margin-top: 20px;
+    height:600px;
+    width: 900px;
+    float: left;
+    display: block;
+}
+.main-center .left2 {
+    margin-top: 20px;
+    margin-left: -50px;
+    height:600px;
+    width: 900px;
+    float: left;
+    display: block;
+}
+
+.main-center .left .left-header{
+    height:40px;
+}
+.main-center .left2 .left-heade2{
+    height:40px;
+}
+.main-center .left .left-header img{
+    float: left;
+    margin-top: 10px;
+}
+.main-center .left2 .left-header2 img{
+    float: left;
+    margin-top: 10px;
+}
+
+
+.choice1{
+    width:auto;
+    float: left;
+    font-size:20px;
+    font-weight: bold;
+    color: #333;
+    line-height:45px;
+    cursor: pointer;
+}
+.choice2{
+    width:auto;
+    float: left;
+    font-size:20px;
+    font-weight: bold;
+    color: #333;
+    line-height:45px;
+    cursor: pointer;
+}
+.choice3{
+    width:auto;
+    float: left;
+    font-size:20px;
+    font-weight: bold;
+    color: #333;
+    line-height:45px;
+    cursor: pointer;
+}
+.choice4{
+    width:auto;
+    float: left;
+    font-size:20px;
+    font-weight: bold;
+    color: #333;
+    line-height:45px;
+    cursor: pointer;
+}
+.choice5{
+    width:auto;
+    float: left;
+    font-size:20px;
+    font-weight: bold;
+    color: #333;
+    line-height:45px;
+    cursor: pointer;
+}
+.tab_bd_item textarea{
+    display: block;
+    margin-top: 20px;
+    margin-left: 15px;
+    float: left;
+    font-size: 14px;
+    color:#555;
+    font-weight: bolder;
+    width: 1200px;
+}
+#two_button{
+    float: left;
+    margin-left: 15px;
+}
+
+#three_button{
+    float: left;
+    margin-left: 15px;
+}
+#h01{
+    color: #000;
+}
+
+
+
+/*这里上传文件按钮的美化*/
+.a-upload {
+    padding: 4px 10px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}

@@ -1,0 +1,721 @@
+/*
+	ÃÂ¨Ã…Ã¤Â·Ã»Â´Â¦Ã€Ã­
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.clear:after{
+    content:"";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+
+/*
+	ÂµÂ¼ÂºÂ½Ã€Â¸
+*/
+
+.nav{
+	padding: 10px;
+	background-color: black;
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	opacity: 0.8;
+	z-index: 100;
+}
+
+.nav .container{
+	width: 1200px;
+	height: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.nav .container .left{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 900;
+}
+.nav .container .right{
+	float: right;
+	margin-right: -15px;
+	height: 30px;
+}
+.nav .container .right > li{
+	float: left;
+	margin-right: 40px;
+	display: block;
+	font-size: 17px;
+	padding: 5px 15px;
+}
+.nav .container .right > li a{
+	color: white;
+}
+/*ÃÂ³Ã’Â»ÃŽÃ„Ã—Ã–Â¾Ã“Ã–ÃÂ´Â¦Ã€Ã­Ã‹Ã¹Ã“Ãtext_centerÃ€Ã */
+.text-center{
+	text-align: center;
+}
+
+
+/*
+	HomeÂ´Ã³ÃÂ¼Â°Ã¥Â¿Ã©
+*/
+#selected{
+	color: #fcac45;
+}
+#home{
+	width: 100%;
+	height: 750px;
+	background: url(../images/man-in-blue-and-green-long-sleeved-suit-riding-on-snowmobile-804570.jpg);
+
+	/*ÃÃ˜Ã•Â¹ÃŠÃ´ÃÃ”Â£ÂºÂ°Ã‘Â±Â³Â¾Â°ÃÂ¼ÃÃ±Ã€Â©Ã•Â¹Ã–ÃÃ—Ã£Â¹Â»Â´Ã³Â£Â¬Ã’Ã”ÃŠÂ¹Â±Â³Â¾Â°ÃÂ¼ÃÃ±ÃÃªÃˆÂ«Â¸Â²Â¸Ã‡Â±Â³Â¾Â°Ã‡Ã¸Ã“Ã²Â¡Â£*/
+	background-size: cover;
+	/*ÃÃ˜Ã•Â¹ÃŠÃ´ÃÃ”Â£ÂºÃÃ”Ã‰Ã¨Ã–ÃƒÂ±Â³Â¾Â°ÃÂ¼ÃÃ±ÂµÃ„Ã†Ã°ÃŠÂ¼ÃŽÂ»Ã–ÃƒÃŽÂªÃ–ÃÂ¼Ã¤Ã…Ã¤ÂºÃbackground-attachmentÃŠÃ´ÃÃ”Â½Ã¢Â¾Ã¶Â¼Ã¦ÃˆÃÃŽÃŠÃŒÃ¢*/
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+#home .over{
+	height: 750px;
+	background-attachment: fixed;
+}
+#home .over .content{
+	position: relative;
+	padding-top: 570px;
+	height: 365px;
+	width: 100%;
+}
+#home .over .content h1{
+    font-weight: 900;
+    font-size: 36px;
+}
+#home .over .content h1 span{
+	color: #fcac45;
+}
+#home .over .content p{
+	font-size: 20px;
+	margin-top: 20px;
+/*	color: #cfcfcf;*/
+}
+
+
+
+/*
+	news1
+*/
+#news1{
+	height: 400px;
+	width: 100%;
+	padding: 80px 0;
+}
+#news1 .container{
+	width: 1230px;
+	height: 500px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+#news1 .container .left{
+	height: 500px;
+	width: 500px;
+	float: left;
+	font-weight: bold;
+}
+
+#news1 .container .left h1{
+	color: #067ac0;
+	font-size: 32px;
+	text-align:left;
+}
+#news1 .container .left h2{
+	font-weight: normal;
+	text-align:left;
+	font-size: 36px;
+	margin-top: 20px;
+}
+#orangebarstyle{
+	height: 5px;
+	width: 100px;
+	margin-top: 30px;
+	background-color: #f1c232;
+}
+#news1 .container .left p{
+	float: left;
+	margin-top: 40px;
+	height: 30px;
+	line-height: 30px;
+	text-align:left;
+	color: #666666;
+	font-weight: normal;
+}
+#news1 .container .left .secon{
+	float: left;
+	color: #666666;
+	font-weight: 400;
+	font-size: 16px;
+	text-align: center;
+	border: 2px solid #666666;
+	margin-top: 140px;
+	height: 35px;
+	width: 120px;
+	line-height: 35px;
+}
+#news1 .container .left #second{
+	background-color:#067ac0;
+	color: white;
+}
+
+#news1 .container .right{
+	margin-left: 10px;
+	float: right;
+	width: 700px;
+	height: 450px;
+	position: relative;
+	overflow: hidden;
+}
+.slider0{
+	width: 3500px;
+	position: absolute;
+	left: -700px;
+	overflow: hidden;
+}
+.slide0{
+	width: 700px;
+	overflow: hidden;
+	float: left;
+}
+.slider0 img{
+	width: 700px;
+	height: 500px;
+}
+#news1 .container .right span{
+	display: block;
+	width: 35px;
+	height: 50px;
+	text-align:center;
+	cursor: pointer;
+	top: 200px;
+	line-height: 50px;
+	background:rgb(0, 0, 0, 0.4);
+	font-size: 30px;
+	position: absolute;
+	color: white;
+}
+#news1 .container .right #left_first{
+	left: 10px;
+}
+#news1 .container .right #right_first{
+	right: 10px;
+}
+#news1 .container .right .content{
+	margin-top: 120px;
+	line-height: 30px;
+}
+
+
+
+
+
+
+
+
+/*
+	Â·Ã–Ã’Â³Ã‚Ã–Â²Â¥Ã‰Ã¨Â¼Ã† 
+*/
+.wrapper{
+	padding-top: 30px;
+	height:720px;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.wrapper .box{
+	position: relative;
+	width: 1500px;
+	height: 660px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.wrapper .box img{
+	width: 100%;
+	display: block;
+}
+.wrapper .box .menu{
+	height: 660px;
+	width: 350px;
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+}
+.slider{
+	height: 1485px;
+	width: 350px;
+	position: absolute;
+	top: -331px;
+}
+.slide{
+	width: 350px;
+	height: 165px;
+	float: left;
+	overflow: hidden;
+	background-color: #fff;
+	line-height: 165px;
+	font-size: 18px;
+	border-bottom:1px solid #ccc;
+	opacity: 0.95;
+}
+.slide div{
+	position: relative;
+	float: left;
+	height: 80px;
+	width: 80px;
+	left: 20px;
+	top: 35px;
+}
+.slide span{
+	display: block;
+	float: right;
+	position: relative;
+	font-weight: 400;
+	font-size: 25px;
+	right: 60px;
+}
+#active{
+	background-color: #f67524;
+	color: white;
+}
+#up{
+	color: gray;
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 4px solid gray;
+	position: absolute;
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+	left: 365px;
+	top: 305px;
+}
+#down{
+	color: gray;
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 60%;
+	border: 4px solid gray;
+	position: absolute;
+	font-size: 50px;
+	line-height: 50px;
+	text-align: center;
+	right: 3px;
+	top: 305px;
+}
+
+.box .content .box_hidden{
+	display: none;
+	width: 330px;
+	height: 240px;
+	float: right;
+	position: absolute;
+	right: 90px;
+	top: 370px;
+}
+.box .content .box_hidden h3{
+	font-size: 42px;
+	margin-bottom: 25px;
+	font-weight: 900;
+}
+.box .content .box_hidden p{
+	font-size: 22px;
+	color: #000;
+	margin-bottom: 30px;
+	font-weight: 500;
+	
+}
+.box .content .box_hidden span{
+	display: block;
+	position: relative;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-left: 70px;
+	margin-top: 50px;
+	height: 48px;
+	line-height: 48px;
+	width: 210px;
+}
+.box .content .box_hidden span a{
+	display: block;
+	position: absolute;
+	left: 55px;
+	font-size: 24px;
+}
+
+
+/*Â¹Ã½Â¶Ã‰Ã‡Ã¸Ã“Ã²*/
+#cur{
+	width: 100%;
+	height: 495px;
+	background: url(../images/05.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+#cur > .container{
+	text-align: center;
+	background-attachment: fixed;
+	height: 495px;
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
+}
+#cur > .container .content{
+	padding-top: 270px;
+	color: white;
+	font-size: 32px;
+}
+
+
+/*补充intro1板块*/
+#intro{
+	height: 200px;
+	width: 100%;
+	background: url(../images/man-surfing-on-water-waves-near-island-1667781.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+#intro .over{
+	text-align: center;
+	background-attachment: fixed;
+	height: 200px;
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
+}
+#intro .over .head{
+	position: relative;
+	top: 40px;
+	font-size: 36px;
+}
+#intro .over .head span{
+	color: #fcac45;
+}
+#intro .over #downscroll img{
+	position: relative;
+	top: 70px;
+	border: 1px solid #cfcfcf;
+	border-radius: 50%;
+	padding: 7px;
+}
+#bian{
+	background-color: #fcac45;
+}
+
+
+/*补充intro板块2*/
+#intro2{
+	margin-top: 150px;
+	height: 200px;
+	width: 100%;
+	background: url(../images/no.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+#intro2 .over2{
+	text-align: center;
+	background-attachment: fixed;
+	height: 200px;
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
+}
+#intro2 .over2 .head2{
+	position: relative;
+	top: 40px;
+	font-size: 36px;
+}
+#intro2 .over2 .head2 span{
+	color: #fcac45;
+}
+#intro2 .over2 #downscroll2 img{
+	position: relative;
+	top: 70px;
+	border: 1px solid #cfcfcf;
+	border-radius: 50%;
+	padding: 7px;
+}
+#bian2{
+	background-color: #fcac45;
+}
+
+/*补充intro1板块*/
+#intro3{
+	margin-top: 100px;
+	height: 200px;
+	width: 100%;
+	background: url(../images/man-in-red-jacket-playing-ice-skates-during-day-time-47356.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+#intro3 .over3{
+	text-align: center;
+	background-attachment: fixed;
+	height: 200px;
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%);
+}
+#intro3 .over3 .head3{
+	position: relative;
+	top: 40px;
+	font-size: 36px;
+}
+#intro3 .over3 .head3 span{
+	color: #fcac45;
+}
+#intro3 .over3 #downscroll3 img{
+	position: relative;
+	top: 70px;
+	border: 1px solid #cfcfcf;
+	border-radius: 50%;
+	padding: 7px;
+}
+#bian3{
+	background-color: #fcac45;
+}
+
+
+
+
+#new2{
+	width: 100%;
+	height: 800px;
+	margin-top: 20px;
+}
+#new2 .box{
+	height: 800px;
+	width: 1200px;
+	margin: 0 auto;
+}
+#new2 .box div{
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 48px;
+	border: 1px solid #ccc;
+}
+#new2 .box div img{
+	transition: all 1s;
+}
+#new2 .box div img:hover{
+	transform: scale(1.01);
+	box-shadow: 8px 8px 4px #888888;
+}
+
+
+/*contact us*/
+.contact{
+	height: 700px;
+	width: 100%;
+}
+.contact .contact_center{
+	height: 700px;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+
+
+/*contact left*/
+.contact .contact_center .left{
+	float: left;
+	width: 550px;
+	height: 700px;
+	text-align: left;
+}
+.contact .contact_center .left h3{
+	margin-top: 70px;
+	font-size: 48px;
+	color: #0082ff;
+	border-bottom: solid 2px #0082ff;
+	margin-bottom: 3px;
+}
+.contact .contact_center .left h4{
+	margin-bottom: 3px;
+	font-weight: normal;
+	font-size: 42px;
+	color: #333;
+	letter-spacing: 3px;
+}
+.contact .contact_center .left .div1{
+	height: 2px;
+	width: 100%;
+	background-color: #eee;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.contact .contact_center .left p{
+	font-size: 14px;
+	color: #424242;
+	line-height: 30px;
+}
+.contact .contact_center .left .bar{
+	font-size: 18px;
+	padding-left: 60px;
+	line-height: 32px;
+	height: 32px;
+	color: #666;
+	margin: 30px 0 30px;
+}
+.contact .contact_center .left #bar1{
+	background: url(..//images/phonebar.png);
+	background-repeat: no-repeat;
+}
+.contact .contact_center .left #bar2{
+	background: url(../images/QQa.png);
+	background-repeat: no-repeat;
+}
+
+
+.contact .contact_center .right{
+	float: left;
+	width: 550px;
+	height: 700px;
+}
+.contact .contact_center .right h3{
+	font-weight: normal;
+	font-size: 28px;
+	color: #444;
+	text-align:left;
+	margin-top: 60px;
+	margin-left: 80px;
+}
+.contact .contact_center .right div{
+	padding-left: 20px;
+	margin-left: 80px;
+	width: 100%;
+	line-height: 50px;
+	background-color: #f3f3f3;
+	outline: none;
+	text-align: left;
+	font-size: 14px;
+	color: #999;
+	width: 400px;
+}
+.contact .contact_center .right div input{
+	border: none;
+	background-color: #f3f3f3;
+	height: 25px;
+	line-height: 25px;
+	width: 200px;
+}
+.contact .contact_center .right div textarea{
+	width: 95%;
+	border: none;
+	height: 70px;
+	background-color: #f3f3f3;
+	text-align: left;
+	color: #999;
+	text-indent: 20px;
+}
+#getcode{
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+	margin-left: 80px;
+	width: 240px;
+	line-height: 50px;
+	background-color: #f3f3f3;
+}
+#getcode input{
+	border: none;
+	background-color: #f3f3f3;
+	height: 35px;
+	line-height: 35px;
+	width: 130px;
+}
+.getCode{
+	width: 100px;
+	position: relative;
+	top: 25px;
+	height: 40px;
+	margin-left: 20px;
+}
+.codeImg{
+	margin-top: 40px;
+	margin-left: 20px;
+	height: 40px;
+}
+.btnmess_btn{
+	margin-left: 80px;
+	width: 420px;
+	height: 50px;
+	border:solid 2px #2779d0;
+	background-color: #fff;
+	outline: none;
+	color: #2779d0;
+	letter-spacing: 10px;
+	font-size: 20px;
+}
+.notice{
+	margin-left: 100px;
+	height:20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: red;
+}
+.codeImg{
+	margin-left: 90px;
+}
+
+#topTop{
+	position: fixed;
+	bottom: 50px;
+	right: 0px;
+	opacity: 0.2;
+	background-color: #000;
+	z-index: 100;
+	width: 40px;
+	height: 40px;
+	padding: 5px 2px;
+}
+#topTop img{
+	width: 40px;
+	height: 40px;
+}
+
+#left{
+    width:400px;
+    float:left;
+}
+
+.grey{
+    color:grey;
+    margin-bottom:20px;
+}
+
+.bigger{
+    line-height:40px;
+}
+
+.beblue{
+    color:#31539b;
+}
+
