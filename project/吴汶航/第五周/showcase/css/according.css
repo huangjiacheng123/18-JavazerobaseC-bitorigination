@@ -1,0 +1,18 @@
+#according{
+}
+#page{
+	width:350px;
+	height:30px;
+	position:absolute;
+	left:40%;
+	color:#9F5F9F;
+}
+#page span{
+	color:#9F5F9F;
+}
+#page span a{
+	color:#9F5F9F;
+}
+#page span a:hover{
+	color:#FF7F00;
+}
