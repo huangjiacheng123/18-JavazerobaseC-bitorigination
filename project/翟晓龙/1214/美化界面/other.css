@@ -1,0 +1,75 @@
+.delete-button { /* 按钮美化 */
+	width: 50px; /* 宽度 */
+	height: 16px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #DC143C; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	text-align: center;
+	
+}
+
+.delete-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background: #FFB6C1;
+}
+
+.alink {
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 13px; /* 字体大小 */
+	text-align: center
+}
+
+.inlink {
+	width: 200px;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	margin-right:7px;
+	margin-bottom:5px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow
+		ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.inlink:focus{
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, 0.6);
+}
+.sub-button { /* 按钮美化 */
+	width: 50px; /* 宽度 */
+	height: 43px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #F4A460; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	text-align: center;
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: #fff; /* 字体颜色 */
+	font-size: 14.5px; /* 字体大小 */
+	text-align: center
+}
+.sub-button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background:  	  #FFDAB9;
+}
+#movingToTop {
+	position: fixed;
+	right: 0px;
+	top: 500px;
+	width: 47px;
+	height: 47px;
+}
