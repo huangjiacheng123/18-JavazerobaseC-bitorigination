@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="s2" duration-ms="35" started-at="2020-12-11T15:30:19 CST" finished-at="2020-12-11T15:30:19 CST">
+    <groups>
+    </groups>
+    <test name="Report" duration-ms="35" started-at="2020-12-11T15:30:19 CST" finished-at="2020-12-11T15:30:19 CST">
+      <class name="com.auto.demo.TestReport">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.auto.demo.TestReport@7a765367]" name="test1" duration-ms="0" started-at="2020-12-11T15:30:19 CST" finished-at="2020-12-11T15:30:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.auto.demo.TestReport@7a765367]" name="test3" duration-ms="0" started-at="2020-12-11T15:30:19 CST" finished-at="2020-12-11T15:30:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.auto.demo.TestReport@7a765367]" name="test2" duration-ms="0" started-at="2020-12-11T15:30:19 CST" finished-at="2020-12-11T15:30:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.auto.demo.TestReport -->
+    </test> <!-- Report -->
+  </suite> <!-- s2 -->
+</testng-results>

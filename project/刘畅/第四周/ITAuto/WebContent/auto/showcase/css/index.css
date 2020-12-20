@@ -1,0 +1,455 @@
+/*
+	脙聧脗篓脙鈥γ兟っ偮访兟幻偮疵偮γ冣偓脙颅
+	*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+ul, li, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+/*
+	脗碌脗录脗潞脗陆脙鈧偮�
+	*/
+.nav {
+	padding: 10px;
+	background-color: black;
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	opacity: 0.8;
+	z-index: 100;
+}
+
+.nav .container {
+	width: 1200px;
+	height: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.nav .container .left {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 28px;
+	color: #fff;
+	font-weight: 900;
+}
+
+.nav .container .right {
+	float: right;
+	margin-right: -15px;
+	height: 30px;
+}
+
+.nav .container .right>li {
+	float: left;
+	margin-right: 40px;
+	display: block;
+	font-size: 17px;
+	padding: 5px 15px;
+}
+
+.nav .container .right>li a {
+	color: white;
+}
+/*脙聧脗鲁脙鈥櫭偮幻兣矫冣�灻冣�斆冣�撁偮久冣�溍冣�撁兟惷偮疵偮γ冣偓脙颅脙鈥姑兟姑冣�溍兟恡ext_center脙鈧兟�*/
+/*.text-center{*/
+/*	text-align: center;*/
+/*}*/
+/*
+	Home脗麓脙鲁脙聧脗录脗掳脙楼脗驴脙漏
+	*/
+#selected {
+	color: #fcac45;
+}
+
+#home {
+	width: 100%;
+	height: 50px;
+	background:
+		url(../images/man-in-blue-and-green-long-sleeved-suit-riding-on-snowmobile-804570.jpg);
+	/*脙聧脙藴脙鈥⒚偮姑兣犆兟疵兟惷冣�澝偮Ｃ偮好偮懊冣�樏偮泵偮趁偮久偮懊兟嵜偮济兟徝兟泵冣偓脗漏脙鈥⒚偮姑冣�撁兟伱冣�斆兟Ｃ偮姑偮幻偮疵兟趁偮Ｃ偮冣�櫭冣�澝兣犆偮姑偮泵偮趁偮久偮懊兟嵜偮济兟徝兟泵兟嵜兟兯喢偮偮该偮裁偮该冣�∶偮泵偮趁偮久偮懊冣�∶兟该冣�溍兟裁偮∶偮�*/
+	background-size: cover;
+	/*脙聧脙藴脙鈥⒚偮姑兣犆兟疵兟惷冣�澝偮Ｃ偮好兟惷冣�澝冣�懊兟冣�撁兤捗偮泵偮趁偮久偮懊兟嵜偮济兟徝兟泵偮得冣�灻冣�犆兟懊兣犆偮济兣矫偮幻冣�撁兤捗兣矫偮冣�撁兟惷偮济兟っ冣�γ兟っ偮好兟廱ackground-attachment脙艩脙麓脙聬脙鈥澝偮矫兟⒚偮久兟睹偮济兟γ兯喢兟澝兣矫兣犆兣捗兟�*/
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+#home .over {
+	height: 750px;
+	background-attachment: fixed;
+}
+
+#home .over .content233 {
+	position: relative;
+	padding-top: 570px;
+	height: 365px;
+	width: 100%;
+}
+
+#home .over .content233 h1 {
+	font-weight: 900;
+	font-size: 36px;
+}
+
+#home .over .content233 h1 span {
+	color: #fcac45;
+}
+
+#home .over .content233 p {
+	font-size: 20px;
+	margin-top: 20px;
+	/*	color: #cfcfcf;*/
+}
+/*
+	news1
+	*/
+#news1 {
+	min-height: 400px;
+	width: 100%;
+	padding: 80px 0;
+}
+
+#news1 .container {
+	width: auto;
+	min-height: 400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/*琛ュ厖intro1鏉垮潡*/
+#intro {
+	height: 200px;
+	width: 100%;
+	background:
+		url(../images/man-surfing-on-water-waves-near-island-1667781.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+#intro .over {
+	text-align: center;
+	background-attachment: fixed;
+	height: 200px;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%,
+		rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55)
+		62%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+#intro .over .head {
+	position: relative;
+	top: 40px;
+	font-size: 36px;
+}
+
+#intro .over .head span {
+	color: #fcac45;
+}
+
+#intro .over #downscroll img {
+	position: relative;
+	top: 70px;
+	border: 1px solid #cfcfcf;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+#bian {
+	background-color: #fcac45;
+}
+
+#new2 {
+	width: 100%;
+	height: 800px;
+	margin-top: 20px;
+}
+
+#new2 .box {
+	height: 800px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#new2 .box div {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 48px;
+	border: 1px solid #ccc;
+}
+
+#new2 .box div img {
+	transition: all 1s;
+}
+
+#new2 .box div img:hover {
+	transform: scale(1.01);
+	box-shadow: 8px 8px 4px #888888;
+}
+/*contact us*/
+.contact {
+	height: 700px;
+	width: 100%;
+}
+
+.contact .contact_center {
+	height: 700px;
+	width: 1100px;
+	margin: 0 auto;
+}
+/*contact left*/
+.contact .contact_center .left {
+	float: left;
+	width: 550px;
+	height: 700px;
+	text-align: left;
+}
+
+.contact .contact_center .left h3 {
+	margin-top: 70px;
+	font-size: 48px;
+	color: #0082ff;
+	border-bottom: solid 2px #0082ff;
+	margin-bottom: 3px;
+}
+
+.contact .contact_center .left h4 {
+	margin-bottom: 3px;
+	font-weight: normal;
+	font-size: 42px;
+	color: #333;
+	letter-spacing: 3px;
+}
+
+.contact .contact_center .left .div1 {
+	height: 2px;
+	width: 100%;
+	background-color: #eee;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.contact .contact_center .left p {
+	font-size: 14px;
+	color: #424242;
+	line-height: 30px;
+}
+
+.contact .contact_center .left .bar {
+	font-size: 18px;
+	padding-left: 60px;
+	line-height: 32px;
+	height: 32px;
+	color: #666;
+	margin: 30px 0 30px;
+}
+
+.contact .contact_center .left #bar1 {
+	background: url(..//images/phonebar.png);
+	background-repeat: no-repeat;
+}
+
+.contact .contact_center .left #bar2 {
+	background: url(../images/QQa.png);
+	background-repeat: no-repeat;
+}
+
+.contact .contact_center .right {
+	float: left;
+	width: 550px;
+	height: 700px;
+}
+
+.contact .contact_center .right h3 {
+	font-weight: normal;
+	font-size: 28px;
+	color: #444;
+	text-align: left;
+	margin-top: 60px;
+	margin-left: 80px;
+}
+
+.contact .contact_center .right div {
+	padding-left: 20px;
+	margin-left: 80px;
+	width: 100%;
+	line-height: 50px;
+	background-color: #f3f3f3;
+	outline: none;
+	text-align: left;
+	font-size: 14px;
+	color: #999;
+	width: 400px;
+}
+
+.contact .contact_center .right div input {
+	border: none;
+	background-color: #f3f3f3;
+	height: 25px;
+	line-height: 25px;
+	width: 200px;
+}
+
+.contact .contact_center .right div textarea {
+	width: 95%;
+	border: none;
+	height: 70px;
+	background-color: #f3f3f3;
+	text-align: left;
+	color: #999;
+	text-indent: 20px;
+}
+
+#getcode {
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+	margin-left: 80px;
+	width: 240px;
+	line-height: 50px;
+	background-color: #f3f3f3;
+}
+
+#getcode input {
+	border: none;
+	background-color: #f3f3f3;
+	height: 35px;
+	line-height: 35px;
+	width: 130px;
+}
+
+.getCode {
+	width: 100px;
+	position: relative;
+	top: 25px;
+	height: 40px;
+	margin-left: 20px;
+}
+
+.codeImg {
+	margin-top: 40px;
+	margin-left: 20px;
+	height: 40px;
+}
+
+.btnmess_btn {
+	margin-left: 80px;
+	width: 420px;
+	height: 50px;
+	border: solid 2px #2779d0;
+	background-color: #fff;
+	outline: none;
+	color: #2779d0;
+	letter-spacing: 10px;
+	font-size: 20px;
+}
+
+.notice {
+	margin-left: 100px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: red;
+}
+
+.codeImg {
+	margin-left: 90px;
+}
+
+#left {
+	width: 400px;
+	float: left;
+}
+
+.grey {
+	color: grey;
+	margin-bottom: 20px;
+}
+
+.bigger {
+	line-height: 40px;
+}
+
+.beblue {
+	color: #31539b;
+}
+
+#box0 {
+	width: 1200px;
+	margin: 0 auto;
+	border: 1px solid #CED4DA;
+	height: 50px;
+}
+
+.lc {
+	height: 100px;
+	width: 300px;
+	position: absolute;
+	left: 630px;
+	top: 800px;
+	font-family: Microsoft YaHei; /* 设置字体 */
+	font-size: 13px;
+}
+.lc input{
+	height:18px;
+}
+.jump{
+	width: 50px; /* 宽度 */
+	height: 16px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #B0C4DE; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	text-align: center;
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 13px; /* 字体大小 */
+	text-align: center
+}
+.jump:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background: #87CEFA;
+}
+
+#searchstyle {
+	height: auto;
+}
+
+#message2 {
+	height: auto;
+	weight:auto;
+	
+}
+
+.h2{
+	font-size:24px;
+	font-weight:bold;
+}
+#red{
+	color:red;
+}
+#green{
+	color:green;
+}

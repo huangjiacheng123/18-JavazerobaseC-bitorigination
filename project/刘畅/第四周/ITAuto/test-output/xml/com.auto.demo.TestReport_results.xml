@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Report"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.000">
+  <properties />
+
+
+      <testcase name="test3" time="0.000" classname="com.auto.demo.TestReport" />
+      <testcase name="test2" time="0.000" classname="com.auto.demo.TestReport" />
+      <testcase name="test1" time="0.000" classname="com.auto.demo.TestReport" />
+
+</testsuite>
